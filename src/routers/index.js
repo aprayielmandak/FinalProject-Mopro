@@ -24,6 +24,16 @@ const Routers = () => {
         component={CreateAccount}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="HomePage"
+        component={HomePage}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ProfilePage"
+        component={ProfilePage}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };
