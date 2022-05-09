@@ -34,6 +34,36 @@ const Routers = () => {
         component={ProfilePage}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="BouquetFlower"
+        component={BouquetFlower}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="BouquetCharacter"
+        component={BouquetCharacter}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="BouquetMoney"
+        component={BouquetMoney}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Card"
+        component={Card}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Pappers"
+        component={Pappers}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Ribbons"
+        component={Ribbons}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };
