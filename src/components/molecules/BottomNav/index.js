@@ -1,8 +1,11 @@
 import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
 import {RibbonNav, PapperNav, CardNav} from '../../../assets/images';
+import {useNavigation} from '@react-navigation/native';
 
 const BottomNav = ({navigation, onPressed, navImage}) => {
+  navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={onPressed}>

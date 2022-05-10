@@ -1,9 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {HBLogo} from '../../assets';
 import Gap from '../../components/atoms/Gap';
 
-const ThankyouPage = () => {
+const ThankyouPage = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('HomePage');
+    }, 3000);
+  });
   return (
     <View style={styles.page}>
       <Gap height={70} />
