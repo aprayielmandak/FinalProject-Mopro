@@ -3,6 +3,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from '../pages/SplashScreen';
 import SignIn from '../pages/SignIn';
 import CreateAccount from '../pages/CreateAccount';
+import HomePage from '../pages/HomePage';
+import ProfilePage from '../pages/ProfilePage';
+import BouquetFlower from '../pages/Menu/Flower';
+import BouquetCharacter from '../pages/Menu/Character';
+import BouquetMoney from '../pages/Menu/Money';
+import Card from '../pages/SubMenu/Card';
+import Pappers from '../pages/SubMenu/Pappers';
+import Ribbons from '../pages/SubMenu/Ribbons';
+import Overall from '../pages/Overall';
+import ThankyouPage from '../pages/ThankyouPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -62,6 +72,16 @@ const Routers = () => {
       <Stack.Screen
         name="Ribbons"
         component={Ribbons}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Overall"
+        component={Overall}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ThankyouPage"
+        component={ThankyouPage}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

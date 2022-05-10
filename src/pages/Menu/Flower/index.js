@@ -11,7 +11,7 @@ import {
   RedFlower,
   FlowerNav,
 } from '../../../assets/images';
-import Tester from '../../TESTER';
+
 
 const BouquetFlower = ({navigation}) => {
   return (
